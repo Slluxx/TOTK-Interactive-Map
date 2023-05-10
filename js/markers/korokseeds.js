@@ -42,5 +42,5 @@ function getKorokSeeds() {
 
     return L.layerGroup(
         layerGroupArray
-    ).addTo(rc.map);
+    );
 }

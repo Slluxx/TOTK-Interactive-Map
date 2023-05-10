@@ -40,5 +40,5 @@ function getStables() {
 
     return L.layerGroup(
         layerGroupArray
-    ).addTo(rc.map);
+    );
 }
