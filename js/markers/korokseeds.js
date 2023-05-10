@@ -1,24 +1,30 @@
 
 let seeds = [
     {
-        coords: [15334, 20728],
+        coords: [15335,20731],
         text: "Lift the rock on the platform.",
         level: "Ground"
     }
 ]
 
-function korokUI(seed){
-    seed = seeds[seed];
+function korokUI(object){
+    object = seeds[object];
 
-    container = document.createElement("div");
-    header = document.createElement("h5");
-    header.innerHTML = "<a href="+location.protocol + '//' + location.host + location.pathname+"?z=8&x="+seed.coords[0]+"&y="+seed.coords[1]+">Korok Seed</a> ("+seed.level+")";
-    text = document.createElement("p");
-    text.innerHTML = seed.text;
-
-    container.appendChild(header);
-    container.appendChild(text);
-    return container;
+    let markerHtml = `
+    <div>
+        <h5>
+            <a href="${location.protocol}//${location.host}${location.pathname}?z=${window.map.getMaxZoom()}&x=${object.coords[0]}&y=${object.coords[1]}">
+            Korok Seed
+            </a>
+        </h5>
+        <p>
+            Level: ${object.level}</br>
+            Location: ${object.coords[0]},${object.coords[1]}
+        </p>
+        <p>${object.text}</p>
+    </div>
+    `
+    return markerHtml;
 }
 
 

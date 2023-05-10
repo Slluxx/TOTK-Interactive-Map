@@ -14,6 +14,11 @@ function setMouseClickMarkerEvent() {
             draggable: true,
             autoPan: true
         }).addTo(map)
-        window.mouseMarker.bindPopup("<a href="+location.protocol + '//' + location.host + location.pathname+"?z="+zoom+"&x="+pxcoords.x+"&y="+pxcoords.y+">Marker</a>").openPopup()
+
+        let html = `<a href="${location.protocol}//${location.host}${location.pathname}?z=${zoom}&x=${coords.x}&y=${coords.y}">Marker</a></br>
+        [${Math.floor(coords.x)},${Math.floor(coords.y)}]
+        `
+
+        window.mouseMarker.bindPopup(html).openPopup()
     })
 }
