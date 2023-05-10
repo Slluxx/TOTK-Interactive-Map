@@ -19,20 +19,22 @@ function leafletInit() {
     // set markers on click events in the map
     setMouseClickMarkerEvent();
 
+    let url = "https://raw.githubusercontent.com/Slluxx/TOTK-Interactive-Map/tiles/assets/tiles"
 
-    let groundMap = L.tileLayer('./assets/tiles/groundtiles/{z}/{x}/{y}.png', {
+
+    let groundMap = L.tileLayer(url+'/groundtiles/{z}/{x}/{y}.png', {
         noWrap: true,
         bounds: window.rc.getMaxBounds(),
         maxNativeZoom: window.rc.zoomLevel(),
     }).addTo(window.map);
 
-    let skyMap = L.tileLayer('./assets/tiles/skytiles/{z}/{x}/{y}.png', {
+    let skyMap = L.tileLayer(url+'/skytiles/{z}/{x}/{y}.png', {
         noWrap: true,
         bounds: window.rc.getMaxBounds(),
         maxNativeZoom: window.rc.zoomLevel(),
     });
 
-    let undergroundMap = L.tileLayer('./assets/tiles/undergroundtiles/{z}/{x}/{y}.png', {
+    let undergroundMap = L.tileLayer(url+'/undergroundtiles/{z}/{x}/{y}.png', {
         noWrap: true,
         bounds: window.rc.getMaxBounds(),
         maxNativeZoom: window.rc.zoomLevel(),
