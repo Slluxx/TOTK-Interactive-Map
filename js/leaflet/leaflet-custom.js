@@ -1,10 +1,4 @@
-function getUrlParameter(){
-    var url = new URL(location);
-    var z = url.searchParams.get("z") || 4;
-    var x = url.searchParams.get("x") || 36000/2;
-    var y = url.searchParams.get("y") || 30000/2;
-    return {z: z, x: x, y: y};
-}
+
 
 
 function leafletInit() {
@@ -31,7 +25,6 @@ function leafletInit() {
 
     let url = "https://raw.githubusercontent.com/Slluxx/TOTK-Interactive-Map/tiles/assets/tiles"
 
-
     let groundMap = L.tileLayer(url + '/groundtiles/{z}/{x}/{y}.png', {
         noWrap: true,
         bounds: window.rc.getMaxBounds(),
@@ -50,19 +43,23 @@ function leafletInit() {
         maxNativeZoom: window.rc.zoomLevel(),
     });
 
-    var overlayMaps = {
-        "Korok Seed": getKorokSeeds(),
-        "Stable": getStables(),
-        "Shrine": getShrines(),
-    };
-
     var baseMaps = {
         "Sky": skyMap,
         "Ground": groundMap,
         "Underground": undergroundMap
     };
 
+    var overlayMaps = {
+        "Korok Seed": getKorokSeeds(),
+        "Stable": getStables(),
+        "Shrine": getShrines(),
+    };
+
+
     var layerControl = L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(window.map);
+    // layerControl.addOverlay(getShrines(), "Shrine");
+    // layerControl.addOverlay(getKorokSeeds(), "Korok Seed");
+    // layerControl.addOverlay(getStables(), "Stable");
 
     window.map.on('zoomed', function () {
         var newzoom = '' + (1 * (window.map.getZoom())) + 'px';
@@ -80,24 +77,25 @@ function leafletInit() {
         updateUrl();
     });
 
-
-
-
 }
 
 function updateUrl() {
-
     if (window.urllocation == undefined){
         window.urllocation = new URL(location);
     }
-
     var zoom = window.map.getZoom();
     var center = window.map.getCenter();
     var pxcoords = window.rc.project([center.lat, center.lng])
-
-    
     window.urllocation.searchParams.set("z", zoom);
     window.urllocation.searchParams.set("x", pxcoords.x);
     window.urllocation.searchParams.set("y", pxcoords.y);
     history.pushState({}, "", window.urllocation);
+}
+
+function getUrlParameter(){
+    var url = new URL(location);
+    var z = url.searchParams.get("z") || 4;
+    var x = url.searchParams.get("x") || 36000/2;
+    var y = url.searchParams.get("y") || 30000/2;
+    return {z: z, x: x, y: y};
 }
