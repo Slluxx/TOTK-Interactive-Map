@@ -64,6 +64,48 @@ let shrines = [
         name: "Jiukoum Shrine",
         text: "",
         level: "Ground"
+    },
+    {
+        coords: [14497,7188],
+        name: "Mayausiy Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [20089,6634],
+        name: "Sikukuu Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [23406,10065],
+        name: "Timawak Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [25711,11246],
+        name: "Kisinona Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [27911,10677],
+        name: "Domizuin Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [29508,8096],
+        name: "Sinatanika Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [31033,6380],
+        name: "Jochi-iu Shrine",
+        text: "",
+        level: "Ground"
     }
 ]
 
