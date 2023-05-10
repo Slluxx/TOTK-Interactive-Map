@@ -86,13 +86,18 @@ function leafletInit() {
 }
 
 function updateUrl() {
+
+    if (window.urllocation == undefined){
+        window.urllocation = new URL(location);
+    }
+
     var zoom = window.map.getZoom();
     var center = window.map.getCenter();
     var pxcoords = window.rc.project([center.lat, center.lng])
 
-    const url = new URL(location);
-    url.searchParams.set("z", zoom);
-    url.searchParams.set("x", pxcoords.x);
-    url.searchParams.set("y", pxcoords.y);
-    history.pushState({}, "", url);
+    
+    window.urllocation.searchParams.set("z", zoom);
+    window.urllocation.searchParams.set("x", pxcoords.x);
+    window.urllocation.searchParams.set("y", pxcoords.y);
+    history.pushState({}, "", window.urllocation);
 }
