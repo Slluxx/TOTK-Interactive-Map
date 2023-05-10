@@ -1,13 +1,31 @@
 let shrines = [
     {
-        coords: [16338, 16798],
-        name: "Shrine",
+        coords: [17367,13623],
+        name: "Kjonnisiu Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [17367,13623],
-        name: "Shrine",
+        coords: [19009,13604],
+        name: "Ojami'o Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [17283,16130],
+        name: "Djiosinih Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [15651,16284],
+        name: "Zuzuyaj Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [15360,13734],
+        name: "Ishodgun Shrine",
         text: "",
         level: "Ground"
     }
