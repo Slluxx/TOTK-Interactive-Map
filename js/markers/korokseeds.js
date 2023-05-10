@@ -1,18 +1,39 @@
+
+let seeds = [
+    {
+        coords: [15334, 20728],
+        text: "Lift the rock on the platform.",
+    }
+]
+
+function korokUI(seed){
+    seed = seeds[seed];
+
+    container = document.createElement("div");
+    header = document.createElement("h5");
+    header.innerHTML = "<a href="+location.protocol + '//' + location.host + location.pathname+"?z=8&x="+seed.coords[0]+"&y="+seed.coords[1]+">Korok Seed</a>";
+    text = document.createElement("p");
+    text.innerHTML = seed.text;
+
+    container.appendChild(header);
+    container.appendChild(text);
+    return container;
+}
+
+
 function getKorokSeeds() {
 
     var korokIcon = L.icon({
         iconUrl: './assets/marker/korokseed.png',
-        // shadowUrl: 'leaf-shadow.png',
-        iconSize:     [35, 35], // size of the icon
-        //shadowSize:   [50, 64], // size of the shadow
-        //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-        //shadowAnchor: [4, 62],  // the same for the shadow
-        //popupAnchor:  [0, -3] // point from which the popup should open relative to the iconAnchor
+        iconSize: [35, 35],
     });
 
+    let layerGroupArray = [];
+    for (seed in seeds) {
+        layerGroupArray.push(L.marker(window.rc.unproject(seeds[seed].coords), { icon: korokIcon }).bindPopup(korokUI(seed)));
+    }
+
     return L.layerGroup(
-        [
-            L.marker(window.rc.unproject([15334,20728]), { icon: korokIcon })
-        ]
+        layerGroupArray
     ).addTo(rc.map);
 }
