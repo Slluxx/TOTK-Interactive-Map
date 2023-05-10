@@ -1,4 +1,14 @@
+function getUrlParameter(){
+    var url = new URL(location);
+    var z = url.searchParams.get("z") || 4;
+    var x = url.searchParams.get("x") || 36000/2;
+    var y = url.searchParams.get("y") || 30000/2;
+    return {z: z, x: x, y: y};
+}
+
+
 function leafletInit() {
+    urlParams = getUrlParameter();
     var img = [
         36000,  // original width of image
         30000   // original height of image
@@ -14,7 +24,7 @@ function leafletInit() {
     window.map.setMaxZoom(window.rc.zoomLevel())
     // all coordinates need to be unprojected using the `unproject` method
     // set the view in the lower right edge of the image
-    window.map.setView(window.rc.unproject([img[0]/2, img[1]/2]), 4)
+    window.map.setView(window.rc.unproject([urlParams.x, urlParams.y]), urlParams.z)
 
     // set markers on click events in the map
     setMouseClickMarkerEvent();
@@ -22,19 +32,19 @@ function leafletInit() {
     let url = "https://raw.githubusercontent.com/Slluxx/TOTK-Interactive-Map/tiles/assets/tiles"
 
 
-    let groundMap = L.tileLayer(url+'/groundtiles/{z}/{x}/{y}.png', {
+    let groundMap = L.tileLayer(url + '/groundtiles/{z}/{x}/{y}.png', {
         noWrap: true,
         bounds: window.rc.getMaxBounds(),
         maxNativeZoom: window.rc.zoomLevel(),
     }).addTo(window.map);
 
-    let skyMap = L.tileLayer(url+'/skytiles/{z}/{x}/{y}.png', {
+    let skyMap = L.tileLayer(url + '/skytiles/{z}/{x}/{y}.png', {
         noWrap: true,
         bounds: window.rc.getMaxBounds(),
         maxNativeZoom: window.rc.zoomLevel(),
     });
 
-    let undergroundMap = L.tileLayer(url+'/undergroundtiles/{z}/{x}/{y}.png', {
+    let undergroundMap = L.tileLayer(url + '/undergroundtiles/{z}/{x}/{y}.png', {
         noWrap: true,
         bounds: window.rc.getMaxBounds(),
         maxNativeZoom: window.rc.zoomLevel(),
@@ -61,4 +71,28 @@ function leafletInit() {
             element.style.height = newzoom;
         });
     });
+
+    window.map.on('moveend', function () {
+        updateUrl();
+    });
+
+    window.map.on('zoomed', function () {
+        updateUrl();
+    });
+
+
+
+
+}
+
+function updateUrl() {
+    var zoom = window.map.getZoom();
+    var center = window.map.getCenter();
+    var pxcoords = window.rc.project([center.lat, center.lng])
+
+    const url = new URL(location);
+    url.searchParams.set("z", zoom);
+    url.searchParams.set("x", pxcoords.x);
+    url.searchParams.set("y", pxcoords.y);
+    history.pushState({}, "", url);
 }
