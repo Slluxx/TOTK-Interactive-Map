@@ -1,7 +1,19 @@
 let stables = [
     {
         coords: [17260, 14834],
-        name: "Stable",
+        name: "Mini Stable",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [19016,18285],
+        name: "Riverside Stable",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [13914,12827],
+        name: "New Serenne Stable",
         text: "",
         level: "Ground"
     }
