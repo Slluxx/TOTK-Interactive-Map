@@ -1,31 +1,67 @@
 let shrines = [
     {
         coords: [17367,13623],
-        name: "Kjonnisiu Shrine",
+        name: "Kyononis Shrine",
         text: "",
         level: "Ground"
     },
     {
         coords: [19009,13604],
-        name: "Ojami'o Shrine",
+        name: "Yamiyo Shrine",
         text: "",
         level: "Ground"
     },
     {
         coords: [17283,16130],
-        name: "Djiosinih Shrine",
+        name: "Jiosin Shrine",
         text: "",
         level: "Ground"
     },
     {
         coords: [15651,16284],
-        name: "Zuzuyaj Shrine",
+        name: "Susuyai Shrine",
         text: "",
         level: "Ground"
     },
     {
         coords: [15360,13734],
-        name: "Ishodgun Shrine",
+        name: "Ishodag Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [17779,18351],
+        name: "Teniten Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [19023,18011],
+        name: "Tajikats Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [13738,12732],
+        name: "Sinakawak Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [13728,19069],
+        name: "Tsutsu-um Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [10427,11492],
+        name: "Runakit Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [20603,21816],
+        name: "Jiukoum Shrine",
         text: "",
         level: "Ground"
     }
