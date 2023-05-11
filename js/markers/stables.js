@@ -111,8 +111,8 @@ function stableUI(object) {
 
 function getStables(level = null) {
     var icon = L.icon({
-        iconUrl: './assets/marker/stable.png',
-        iconSize: [22, 22],
+        iconUrl: './assets/marker/stable_r.png',
+        iconSize: [25, 25],
     });
 
     let layerGroupArray = [];

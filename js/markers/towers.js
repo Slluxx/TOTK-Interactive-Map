@@ -115,8 +115,8 @@ function towerUI(object) {
 function getTowers(level = null) {
 
     var korokIcon = L.icon({
-        iconUrl: './assets/marker/tower.png',
-        iconSize: [22, 27],
+        iconUrl: './assets/marker/tower_r.png',
+        iconSize: [25, 25],
     });
 
     let layerGroupArray = [];
