@@ -31,7 +31,61 @@ let stables = [
     },
     {
         coords: [9594,21684],
-        name: "UNNAMED Stable",
+        name: "Gerudo Canyon Stable",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [9207,13362],
+        name: "Tabantha Stable",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [13034,7288],
+        name: "Snowfield Stable",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [20666,15522],
+        name: "Wetland Stable",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [13651,18813],
+        name: "Outskirt Stable",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [19587,25354],
+        name: "Highland Stable",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [22657,25618],
+        name: "Lakeside Stable",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [23285,20781],
+        name: "Dueling Peaks Stable",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [25843,11569],
+        name: "Foothill Stable",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [27449,9929],
+        name: "South Akkala Stable",
         text: "",
         level: "Ground"
     }
