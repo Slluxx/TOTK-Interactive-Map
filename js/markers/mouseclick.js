@@ -30,4 +30,13 @@ function generateMarker(event){
         if (window.mouseMarker != null) window.mouseMarker.remove()
         generateMarker(event);
     })
+
+    /*
+    might be generating a ton of eventlisteners
+    window.map.on("zoomend", function(event){
+        //var pxcoords = window.rc.project([._latlng.lat, window.mouseMarker._latlng.lat.lng])
+        if (window.mouseMarker != null) window.mouseMarker.remove()
+        generateMarker({latlng: window.mouseMarker._latlng});
+    })
+    */
 }
