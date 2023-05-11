@@ -20,8 +20,11 @@ function generateMarker(event){
         autoPan: true
     }).addTo(map)
 
-    let html = `<a href="${location.protocol}//${location.host}${location.pathname}?z=${zoom}&x=${coords.x}&y=${coords.y}">Marker</a></br>
-    [${Math.floor(coords.x)},${Math.floor(coords.y)}]
+    let contributeUrl = "https://github.com/slluxx/TOTK-Interactive-Map/issues/new?title=New+Marker:&body=```%0A{%0Acoords:%20["+Math.floor(coords.x)+","+Math.floor(coords.y)+"],%0Aname:%20%22%22,%0Atext:%20%22description%22,%0Alevel:%20%22Ground/Sky/Underground%22%0A}%0A```"
+    let html = `<a href="${location.protocol}//${location.host}${location.pathname}?z=${zoom}&x=${Math.floor(coords.x)}&y=${Math.floor(coords.y)}">Marker</a></br>
+    [${Math.floor(coords.x)},${Math.floor(coords.y)}]</br></br>
+
+    <a href ="${contributeUrl}" target="_blank">Contribute</a>
     `
 
     window.mouseMarker.bindPopup(html).openPopup()

@@ -123,8 +123,8 @@ function updateUrl() {
     var center = window.map.getCenter();
     var pxcoords = window.rc.project([center.lat, center.lng])
     window.urllocation.searchParams.set("z", zoom);
-    window.urllocation.searchParams.set("x", pxcoords.x);
-    window.urllocation.searchParams.set("y", pxcoords.y);
+    window.urllocation.searchParams.set("x", Math.floor(pxcoords.x));
+    window.urllocation.searchParams.set("y", Math.floor(pxcoords.y));
     history.pushState({}, "", window.urllocation);
 }
 
