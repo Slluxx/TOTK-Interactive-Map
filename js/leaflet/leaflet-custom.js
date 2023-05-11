@@ -61,6 +61,11 @@ function leafletInit() {
 
 
 
+    if (urlParams.m == "1") {
+        // set marker on x,y position from url
+        window.mouseMarker = L.marker(window.rc.unproject([urlParams.x, urlParams.y])).addTo(window.map)
+    }
+
 
 
     window.map.on('baselayerchange', function (newlayer) {
@@ -125,6 +130,7 @@ function updateUrl() {
     window.urllocation.searchParams.set("z", zoom);
     window.urllocation.searchParams.set("x", Math.floor(pxcoords.x));
     window.urllocation.searchParams.set("y", Math.floor(pxcoords.y));
+    window.urllocation.searchParams.delete("m");
     history.pushState({}, "", window.urllocation);
 }
 
@@ -133,5 +139,6 @@ function getUrlParameter(){
     var z = url.searchParams.get("z") || 4;
     var x = url.searchParams.get("x") || 36000/2;
     var y = url.searchParams.get("y") || 30000/2;
-    return {z: z, x: x, y: y};
+    var m = url.searchParams.get("m") || 0;
+    return {z: z, x: x, y: y, m: m};
 }
