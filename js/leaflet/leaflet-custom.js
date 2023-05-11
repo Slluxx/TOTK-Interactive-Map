@@ -53,6 +53,7 @@ function leafletInit() {
         "Korok Seed": getKorokSeeds(),
         "Stable": getStables(),
         "Shrine": getShrines(),
+        "Tower": getTowers(),
     };
 
 
