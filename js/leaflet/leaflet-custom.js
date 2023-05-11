@@ -120,6 +120,7 @@ function getOverlayMaps(layer = null) {
         "Stable": getStables(layer),
         "Shrine": getShrines(layer),
         "Tower": getTowers(layer),
+        "Dispenser": getDeviceDispenser(layer),
     };
     return overlayMaps;
 }
