@@ -65,6 +65,30 @@ let towers = [
         name: "Popla Foothills Skyview Tower",
         text: "",
         level: "Ground"
+    },
+    {
+        coords: [6117,18918],
+        name: "Gerudo Highlands Skyview Tower",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [22023,18535],
+        name: "Sahasra Slope Skyview Tower",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [25260,23264],
+        name: "Rabella Wetlands Skyview Tower",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [29543,18946],
+        name: "Mount Lanayru Skyview Tower",
+        text: "",
+        level: "Ground"
     }
 ]
 
