@@ -118,6 +118,60 @@ let shrines = [
         name: "Gatakis Shrine",
         text: "",
         level: "Ground"
+    },
+    {
+        coords: [8782,10156],
+        name: "Oromuwak Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [7936,7848],
+        name: "Sahirow Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [9475,13104],
+        name: "Makurukisa Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [7509,15592],
+        name: "Tsurakawaka Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [4588,17022],
+        name: "Otutsum Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [4076,19525],
+        name: "Mayamats Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [5494,21419],
+        name: "Kudanisar Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [3953,24255],
+        name: "Miryotanog Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [6800,25869],
+        name: "Karahatag Shrine",
+        text: "",
+        level: "Ground"
     }
 ]
 
