@@ -74,7 +74,7 @@ function leafletInit() {
         updateUrl();
     });
 
-    window.map.on('zoomed', function () {
+    window.map.on('zoomend', function () {
         updateUrl();
     });
 
