@@ -16,6 +16,24 @@ let stables = [
         name: "New Serenne Stable",
         text: "",
         level: "Ground"
+    },
+    {
+        coords: [30683,6758],
+        name: "East Akkala Stable",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [21195,11576],
+        name: "Woodland Stable",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [9594,21684],
+        name: "UNNAMED Stable",
+        text: "",
+        level: "Ground"
     }
 ]
 
