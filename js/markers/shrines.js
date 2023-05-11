@@ -106,6 +106,18 @@ let shrines = [
         name: "Jochi-iu Shrine",
         text: "",
         level: "Ground"
+    },
+    {
+        coords: [27911,13742],
+        name: "Mogawak Shrine",
+        text: "",
+        level: "Ground"
+    },
+    {
+        coords: [7031,9573],
+        name: "Gatakis Shrine",
+        text: "",
+        level: "Ground"
     }
 ]
 
