@@ -24,6 +24,7 @@ function leafletInit() {
     setMouseClickMarkerEvent();
 
     let url = "https://raw.githubusercontent.com/Slluxx/TOTK-Interactive-Map/tiles/assets/tiles"
+    // url = "https://cdn.jsdelivr.net/gh/slluxx/TOTK-Interactive-Map@tiles/assets/tiles"
 
     let groundMap = L.tileLayer(url + '/groundtiles/{z}/{x}/{y}.png', {
         noWrap: true,
@@ -43,24 +44,48 @@ function leafletInit() {
         maxNativeZoom: window.rc.zoomLevel(),
     });
 
-    var baseMaps = {
+    window.baseMaps = {
         "Sky": skyMap,
         "Ground": groundMap,
         "Underground": undergroundMap
     };
 
-    var overlayMaps = {
-        "Korok Seed": getKorokSeeds(),
-        "Stable": getStables(),
-        "Shrine": getShrines(),
-        "Tower": getTowers(),
-    };
+    window.overlayMaps = getOverlayMaps("Ground");
 
 
-    var layerControl = L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(window.map);
-    // layerControl.addOverlay(getShrines(), "Shrine");
+    window.layerControl = L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(window.map);
+    // layerControl.addOverlay(window.test, "Shrine");
     // layerControl.addOverlay(getKorokSeeds(), "Korok Seed");
     // layerControl.addOverlay(getStables(), "Stable");
+    // layerControl.removeLayer( window.overlayMaps["Shrine"]);
+
+
+
+
+
+    window.map.on('baselayerchange', function (newlayer) {
+        for (overlay in window.overlayMaps) {
+            for (marker in window.overlayMaps[overlay]._layers) {
+                console.log(window.overlayMaps[overlay]._layers[marker]);
+                window.overlayMaps[overlay]._layers[marker].remove();
+            }
+            window.layerControl.removeLayer(window.overlayMaps[overlay]);
+        }
+        
+        window.overlayMaps = getOverlayMaps(newlayer.name);
+        for (overlay in window.overlayMaps) {
+            window.layerControl.addOverlay(window.overlayMaps[overlay], overlay);
+        }
+        
+
+    });
+
+
+
+
+
+
+
 
     window.map.on('zoomed', function () {
         var newzoom = '' + (1 * (window.map.getZoom())) + 'px';
@@ -78,6 +103,16 @@ function leafletInit() {
         updateUrl();
     });
 
+}
+
+function getOverlayMaps(layer = null){
+    let overlayMaps = {
+        "Korok Seed": getKorokSeeds(layer),
+        "Stable": getStables(layer),
+        "Shrine": getShrines(layer),
+        "Tower": getTowers(layer),
+    };
+    return overlayMaps;
 }
 
 function updateUrl() {

@@ -1,14 +1,13 @@
 
 let seeds = [
     {
-        coords: [15335,20731],
+        coords: [15335, 20731],
         text: "Lift the rock on the platform.",
         level: "Ground"
     }
 ]
 
-function korokUI(object){
-    object = seeds[object];
+function korokUI(object) {
 
     let markerHtml = `
     <div>
@@ -28,7 +27,7 @@ function korokUI(object){
 }
 
 
-function getKorokSeeds() {
+function getKorokSeeds(level = null) {
 
     var korokIcon = L.icon({
         iconUrl: './assets/marker/korokseed.png',
@@ -36,8 +35,10 @@ function getKorokSeeds() {
     });
 
     let layerGroupArray = [];
-    for (seed in seeds) {
-        layerGroupArray.push(L.marker(window.rc.unproject(seeds[seed].coords), { icon: korokIcon }).bindPopup(korokUI(seed)));
+    for (object in seeds) {
+        if (seeds[object].level == null || seeds[object].level == level) {
+            layerGroupArray.push(L.marker(window.rc.unproject(seeds[object].coords), { icon: korokIcon }).bindPopup(korokUI(seeds[object])));
+        }
     }
 
     return L.layerGroup(

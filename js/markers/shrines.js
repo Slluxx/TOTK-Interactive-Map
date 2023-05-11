@@ -1,470 +1,494 @@
 let shrines = [
     {
-        coords: [17367,13623],
+        coords: [17367, 13623],
         name: "Kyononis Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [19009,13604],
+        coords: [19009, 13604],
         name: "Yamiyo Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [17283,16130],
+        coords: [17283, 16130],
         name: "Jiosin Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [15651,16284],
+        coords: [15651, 16284],
         name: "Susuyai Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [15360,13734],
+        coords: [15360, 13734],
         name: "Ishodag Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [17779,18351],
+        coords: [17779, 18351],
         name: "Teniten Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [19023,18011],
+        coords: [19023, 18011],
         name: "Tajikats Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [13738,12732],
+        coords: [13738, 12732],
         name: "Sinakawak Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [13728,19069],
+        coords: [13728, 19069],
         name: "Tsutsu-um Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [10427,11492],
+        coords: [10427, 11492],
         name: "Runakit Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [20603,21816],
+        coords: [20603, 21816],
         name: "Jiukoum Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [14497,7188],
+        coords: [14497, 7188],
         name: "Mayausiy Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [20089,6634],
+        coords: [20089, 6634],
         name: "Sikukuu Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [23406,10065],
+        coords: [23406, 10065],
         name: "Timawak Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [25711,11246],
+        coords: [25711, 11246],
         name: "Kisi-Nona Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [27911,10677],
+        coords: [27911, 10677],
         name: "Domizuin Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [29508,8096],
+        coords: [29508, 8096],
         name: "Sinatanika Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [31033,6380],
+        coords: [31033, 6380],
         name: "Jochi-iu Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [27911,13742],
+        coords: [27911, 13742],
         name: "Mogawak Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [7031,9573],
+        coords: [7031, 9573],
         name: "Gatakis Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [8782,10156],
+        coords: [8782, 10156],
         name: "Oromuwak Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [7936,7848],
+        coords: [7936, 7848],
         name: "Sahirow Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [9475,13104],
+        coords: [9475, 13104],
         name: "Makurukisa Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [7509,15592],
+        coords: [7509, 15592],
         name: "Tsurakawaka Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [4588,17022],
+        coords: [4588, 17022],
         name: "Otutsum Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [4076,19525],
+        coords: [4076, 19525],
         name: "Mayamats Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [5494,21419],
+        coords: [5494, 21419],
         name: "Kudanisar Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [3953,24255],
+        coords: [3953, 24255],
         name: "Miryotanog Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [6800,25869],
+        coords: [6800, 25869],
         name: "Karahatag Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [13075,7062],
+        coords: [13075, 7062],
         name: "Orochium Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [14679,8727],
+        coords: [14679, 8727],
         name: "Kiuyoyou Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [16810,6800],
+        coords: [16810, 6800],
         name: "Kikakin Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [12235,16094],
+        coords: [12235, 16094],
         name: "Sonapan Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [10044,21716],
+        coords: [10044, 21716],
         name: "Turakamik Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [8129,22539],
+        coords: [8129, 22539],
         name: "Mayatat Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [6341,23900],
+        coords: [6341, 23900],
         name: "Soryotanog Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [5537,26488],
+        coords: [5537, 26488],
         name: "Irasak Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [10666,25016],
+        coords: [10666, 25016],
         name: "Siwakama Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [12614,25392],
+        coords: [12614, 25392],
         name: "Gerudo Desert 3",
         text: "",
         level: "Ground"
     },
     {
-        coords: [13393,23782],
+        coords: [13393, 23782],
         name: "Kitawak Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [12619,22258],
+        coords: [12619, 22258],
         name: "Jee Noh Shrine",
         text: "unconfirmed",
         level: "Ground"
     },
     {
-        coords: [11889,20566],
+        coords: [11889, 20566],
         name: "Rakakudaj Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [7764,19132],
+        coords: [7764, 19132],
         name: "Rotsumamu Shrine",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [8445,23972],
+        coords: [8445, 23972],
         name: "Gerudo Desert 5",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [20028,25070],
+        coords: [20028, 25070],
         name: "Utsushok Shrine",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [22531,25739],
+        coords: [22531, 25739],
         name: "Joju-u-u Shrine",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [26469,24794],
+        coords: [26469, 24794],
         name: "Shifumimi Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [27275,24638],
+        coords: [27275, 24638],
         name: "Bamitok Shrine",
         text: "Entrance: 3225, -3020, 60</br>Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [28413,21561],
+        coords: [28413, 21561],
         name: "Zamikako Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [29189,21170],
+        coords: [29189, 21170],
         name: "Maya-Hisika Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [31251,16868],
+        coords: [31251, 16868],
         name: "Yomizuk Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [29639,15639],
+        coords: [29639, 15639],
         name: "Apogeke Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [29364,13284],
+        coords: [29364, 13284],
         name: "Ihen-a Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [31489,12549],
+        coords: [31489, 12549],
         name: "Gatanisis Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [31964,3866],
+        coords: [31964, 3866],
         name: "Igasyuku Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [31524,8665],
+        coords: [31524, 8665],
         name: "Gemimik Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [26592,4098],
+        coords: [26592, 4098],
         name: "Kimayat Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [28298,4930],
+        coords: [28298, 4930],
         name: "Kamatukis Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [25205,5159],
+        coords: [25205, 5159],
         name: "Sibajitak Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [23296,7456],
+        coords: [23296, 7456],
         name: "Marakuguc Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [23877,6734],
+        coords: [23877, 6734],
         name: "Momosik Shrine",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [25157,7230],
+        coords: [25157, 7230],
         name: "Sitsum Shrine",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [27181,9509],
+        coords: [27181, 9509],
         name: "Maya-Tidegina Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [29444,11359],
+        coords: [29444, 11359],
         name: "Jochi-Ihiga Shrine",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [30503,11048],
+        coords: [30503, 11048],
         name: "Rasitakivaka Shrine",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [24822,14569],
+        coords: [24822, 14569],
         name: "Maoi Keska Shrine",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [23250,14983],
+        coords: [23250, 14983],
         name: "Jonsau Shrine",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [20751,15769],
+        coords: [20751, 15769],
         name: "Tukarok Shrine",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [21530,17331],
+        coords: [21530, 17331],
         name: "Moronku Shrine",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [23317,18161],
+        coords: [23317, 18161],
         name: "Makasura Shrine",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [22679,20834],
+        coords: [22679, 20834],
         name: "Eshos Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [21653,22626],
+        coords: [21653, 22626],
         name: "Utojishi Shrine",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [18623,22920],
+        coords: [18623, 22920],
         name: "En-oma Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [13678,19847],
+        coords: [13678, 19847],
         name: "Ryogoko Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [15884,17589],
+        coords: [15884, 17589],
         name: "Ma-Yatinou Shrine",
         text: "",
         level: "Ground"
     },
     {
-        coords: [20801,20699],
+        coords: [20801, 20699],
         name: "Jochishiu Shrine",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [31910,26118],
+        coords: [31910, 26118],
         name: "Marari-Ina Shrine",
         text: "Unconfirmed",
         level: "Ground"
     },
     {
-        coords: [31782,5135],
+        coords: [31782, 5135],
         name: "Rasikawa Shrine",
         text: "Unconfirmed",
+        level: "Ground"
+    },
+    {
+        coords: [18654, 11759],
+        name: "Sepapa Shrine",
+        text: "Unconfirmed",
+        level: "Ground"
+    },
+    {
+        coords: [20287, 12527],
+        name: "Ren-Ize Shrine",
+        text: "Unconfirmed",
+        level: "Ground"
+    },
+    {
+        coords: [21605, 14019],
+        name: "Jod-Zeniu Shrine",
+        text: "Unconfirmed",
+        level: "Ground"
+    },
+    {
+        coords: [17452, 19686],
+        name: "Kamizuna Shrine",
+        text: "",
         level: "Ground"
     },
 
@@ -474,63 +498,62 @@ let shrines = [
 
 
     {
-        coords: [18062,19511],
+        coords: [18062, 19511],
         name: "In-Isa Shrine",
         text: "Unconfirmed",
         level: "Sky"
     },
     {
-        coords: [18834,17723],
+        coords: [18834, 17723],
         name: "Ukouho Shrine",
         text: "Unconfirmed",
         level: "Sky"
     },
     {
-        coords: [19145,19976],
+        coords: [19145, 19976],
         name: "Nacho-Yaha Shrine",
         text: "Unconfirmed",
         level: "Sky"
     },
     {
-        coords: [14240,19476],
+        coords: [14240, 19476],
         name: "Jinodokao Shrine",
         text: "Unconfirmed",
         level: "Sky"
     },
     {
-        coords: [23276,18626],
+        coords: [23259,18617],
         name: "Joshiu Shrine",
         text: "Unconfirmed",
         level: "Sky"
     },
     {
-        coords: [26754,13419],
+        coords: [26754, 13419],
         name: "Jirutagumachi Shrine",
         text: "Unconfirmed",
         level: "Sky"
     },
     {
-        coords: [29064,10581],
+        coords: [28997,10558],
         name: "Natakako Shrine",
-        text: "Unconfirmed",
+        text: "",
         level: "Sky"
     },
     {
-        coords: [23631,11420],
+        coords: [23631, 11420],
         name: "Kadaunari Shrine",
         text: "Unconfirmed",
         level: "Sky"
     },
     {
-        coords: [26571,23583],
+        coords: [26572,23552],
         name: "Kumamai-No Shrine",
         text: "Unconfirmed",
         level: "Sky"
     }
 ]
 
-function shrineUI(object){
-    object = shrines[object];
+function shrineUI(object) {
 
     let markerHtml = `
     <div>
@@ -550,15 +573,17 @@ function shrineUI(object){
     return markerHtml;
 }
 
-function getShrines() {
+function getShrines(level = null) {
     var icon = L.icon({
         iconUrl: './assets/marker/shrine.png',
         iconSize: [22, 22],
     });
 
     let layerGroupArray = [];
-    for (shrine in shrines) {
-        layerGroupArray.push(L.marker(window.rc.unproject(shrines[shrine].coords), { icon: icon }).bindPopup(shrineUI(shrine)));
+    for (object in shrines) {
+        if (shrines[object].level == null || shrines[object].level == level) {
+            layerGroupArray.push(L.marker(window.rc.unproject(shrines[object].coords), { icon: icon }).bindPopup(shrineUI(shrines[object])));
+        }
     }
 
     return L.layerGroup(
