@@ -98,7 +98,7 @@ function towerUI(object){
     <div>
         <h5>
             <a href="${location.protocol}//${location.host}${location.pathname}?z=${window.map.getMaxZoom()}&x=${object.coords[0]}&y=${object.coords[1]}">
-            Korok Seed
+            ${object.name}
             </a>
         </h5>
         <p>
