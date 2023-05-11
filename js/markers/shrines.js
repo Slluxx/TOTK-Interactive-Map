@@ -550,6 +550,48 @@ let shrines = [
         name: "Kumamai-No Shrine",
         text: "Unconfirmed",
         level: "Sky"
+    },
+    {
+        coords: [28439,13005],
+        name: "Igoshon Shrine",
+        text: "",
+        level: "Sky"
+    },
+    {
+        coords: [15090,4396],
+        name: "Tenbez Shrine",
+        text: "",
+        level: "Sky"
+    },
+    {
+        coords: [8097,4695],
+        name: "Kahatanaum Shrine",
+        text: "",
+        level: "Sky"
+    },
+    {
+        coords: [9147,5861],
+        name: "Mayaumekis Shrine",
+        text: "",
+        level: "Sky"
+    },
+    {
+        coords: [10792,12532],
+        name: "Taunhiy Shrine",
+        text: "",
+        level: "Sky"
+    },
+    {
+        coords: [20127,19146],
+        name: "Gutanbac Shrine",
+        text: "",
+        level: "Sky"
+    },
+    {
+        coords: [12614,24888],
+        name: "Siyamotsus Shrine",
+        text: "",
+        level: "Sky"
     }
 ]
 
