@@ -76,12 +76,12 @@ function leafletInit() {
             }
             window.layerControl.removeLayer(window.overlayMaps[overlay]);
         }
-        
+
         window.overlayMaps = getOverlayMaps(newlayer.name);
         for (overlay in window.overlayMaps) {
             window.layerControl.addOverlay(window.overlayMaps[overlay], overlay);
         }
-        
+
 
     });
 
@@ -108,9 +108,13 @@ function leafletInit() {
         updateUrl();
     });
 
+    L.DomEvent.on(document.getElementsByClassName("leaflet-control-layers-list")[0], 'click', function (ev) {
+        L.DomEvent.stopPropagation(ev);
+    });
+
 }
 
-function getOverlayMaps(layer = null){
+function getOverlayMaps(layer = null) {
     let overlayMaps = {
         "Korok Seed": getKorokSeeds(layer),
         "Stable": getStables(layer),
@@ -121,7 +125,7 @@ function getOverlayMaps(layer = null){
 }
 
 function updateUrl() {
-    if (window.urllocation == undefined){
+    if (window.urllocation == undefined) {
         window.urllocation = new URL(location);
     }
     var zoom = window.map.getZoom();
@@ -134,11 +138,11 @@ function updateUrl() {
     history.pushState({}, "", window.urllocation);
 }
 
-function getUrlParameter(){
+function getUrlParameter() {
     var url = new URL(location);
     var z = url.searchParams.get("z") || 4;
-    var x = url.searchParams.get("x") || 36000/2;
-    var y = url.searchParams.get("y") || 30000/2;
+    var x = url.searchParams.get("x") || 36000 / 2;
+    var y = url.searchParams.get("y") || 30000 / 2;
     var m = url.searchParams.get("m") || 0;
-    return {z: z, x: x, y: y, m: m};
+    return { z: z, x: x, y: y, m: m };
 }
