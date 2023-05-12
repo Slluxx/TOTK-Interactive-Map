@@ -14,7 +14,7 @@ let FairyFountains = [
     {
         coords: [23305,21543],
         name: "Great Fairy Fountain",
-        text: "Great Fairy XX",
+        text: "Great Fairy Cotera",
         level: "Ground"
     },
     {
