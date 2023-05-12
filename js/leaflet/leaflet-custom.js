@@ -116,13 +116,13 @@ function leafletInit() {
 function getOverlayMaps(layer = null) {
     let overlayMaps = {
         "Dispenser": getDeviceDispenser(layer),
-        "Fairy Fountains": getFairyFountains(layer),
+        "Fairy Fountain": getFairyFountains(layer),
         "Korok Seed": getKorokSeeds(layer),
         "Shrine": getShrines(layer),
         "Stable": getStables(layer),
         "Tear of the Dragon": getTearOfTheDragon(layer),
         "Tower": getTowers(layer),
-        "Treasures": getTreasure(layer),
+        "Treasure": getTreasure(layer),
     };
     return overlayMaps;
 }
