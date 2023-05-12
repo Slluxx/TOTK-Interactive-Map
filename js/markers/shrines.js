@@ -491,12 +491,34 @@ let shrines = [
         text: "",
         level: "Ground"
     },
+    {
+        coords: [13806, 3972],
+        name: "Shrine",
+        text: "Mallet Smash",
+        level: "Ground"
+    },
+    {
+        coords: [19396, 8436],
+        name: "Musanokir Shrine",
+        text: "Swing to Hit",
+        level: "Ground"
+    },
 
 
 
 
-
-
+    {
+        coords: [6412, 6964],
+        name: "Ijo-o Shrine",
+        text: "More than Defense",
+        level: "Sky"
+    },
+    {
+        coords: [12850, 21356],
+        name: "Rakashog Shrine",
+        text: "A Reflective Device",
+        level: "Sky"
+    },
     {
         coords: [18062, 19511],
         name: "In-Isa Shrine",
@@ -522,7 +544,7 @@ let shrines = [
         level: "Sky"
     },
     {
-        coords: [23259,18617],
+        coords: [23259, 18617],
         name: "Joshiu Shrine",
         text: "Unconfirmed",
         level: "Sky"
@@ -534,7 +556,7 @@ let shrines = [
         level: "Sky"
     },
     {
-        coords: [28997,10558],
+        coords: [28997, 10558],
         name: "Natakako Shrine",
         text: "",
         level: "Sky"
@@ -546,49 +568,49 @@ let shrines = [
         level: "Sky"
     },
     {
-        coords: [26572,23552],
+        coords: [26572, 23552],
         name: "Kumamai-No Shrine",
         text: "Unconfirmed",
         level: "Sky"
     },
     {
-        coords: [28439,13005],
+        coords: [28439, 13005],
         name: "Igoshon Shrine",
         text: "",
         level: "Sky"
     },
     {
-        coords: [15090,4396],
+        coords: [15090, 4396],
         name: "Tenbez Shrine",
         text: "",
         level: "Sky"
     },
     {
-        coords: [8097,4695],
+        coords: [8097, 4695],
         name: "Kahatanaum Shrine",
         text: "",
         level: "Sky"
     },
     {
-        coords: [9147,5861],
+        coords: [9147, 5861],
         name: "Mayaumekis Shrine",
         text: "",
         level: "Sky"
     },
     {
-        coords: [10792,12532],
+        coords: [10792, 12532],
         name: "Taunhiy Shrine",
         text: "",
         level: "Sky"
     },
     {
-        coords: [20127,19146],
+        coords: [20127, 19146],
         name: "Gutanbac Shrine",
         text: "",
         level: "Sky"
     },
     {
-        coords: [12614,24888],
+        coords: [12614, 24888],
         name: "Siyamotsus Shrine",
         text: "",
         level: "Sky"

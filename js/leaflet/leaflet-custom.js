@@ -71,7 +71,6 @@ function leafletInit() {
     window.map.on('baselayerchange', function (newlayer) {
         for (overlay in window.overlayMaps) {
             for (marker in window.overlayMaps[overlay]._layers) {
-                console.log(window.overlayMaps[overlay]._layers[marker]);
                 window.overlayMaps[overlay]._layers[marker].remove();
             }
             window.layerControl.removeLayer(window.overlayMaps[overlay]);
@@ -121,6 +120,7 @@ function getOverlayMaps(layer = null) {
         "Shrine": getShrines(layer),
         "Tower": getTowers(layer),
         "Dispenser": getDeviceDispenser(layer),
+        "Treasures": getTreasure(layer),
     };
     return overlayMaps;
 }

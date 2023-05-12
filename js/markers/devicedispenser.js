@@ -1,9 +1,27 @@
 
 let dispensers = [
     {
-        coords: [20312,18785],
+        coords: [20312, 18785],
         name: "Device Dispenser",
         text: "Flame Emitter</br>Wing</br>Fan</br>Portable Pot</br>",
+        level: "Sky"
+    },
+    {
+        coords: [29272, 10371],
+        name: "Device Dispenser",
+        text: "Homing Cart</br>Stake</br>Cart</br>Cannon</br>Construct Head",
+        level: "Sky"
+    },
+    {
+        coords: [26750, 13495],
+        name: "Device Dispenser",
+        text: "Cart</br>Wing</br>Fan</br>Beam Emitter",
+        level: "Sky"
+    },
+    {
+        coords: [6584, 6718],
+        name: "Device Dispenser",
+        text: "Rocket</br>Flame Emitter</br>Portable Pot</br>Time Bomb",
         level: "Sky"
     }
 ]
