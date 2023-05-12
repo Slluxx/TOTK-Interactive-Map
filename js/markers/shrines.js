@@ -530,13 +530,13 @@ let shrines = [
     {
         coords: [26754, 13419],
         name: "Jirutagumachi Shrine",
-        text: "Unconfirmed",
+        text: "A Flying Device",
         level: "Sky"
     },
     {
         coords: [28997,10558],
-        name: "Natakako Shrine",
-        text: "",
+        name: "Natak Shrine",
+        text: "Rauru's Blessing",
         level: "Sky"
     },
     {
@@ -554,7 +554,7 @@ let shrines = [
     {
         coords: [28439,13005],
         name: "Igoshon Shrine",
-        text: "",
+        text: "Orbs of Water",
         level: "Sky"
     },
     {
